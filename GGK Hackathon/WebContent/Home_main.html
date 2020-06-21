@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMV Home_page</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="svm_style.css">
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+}
+body{
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  color: #c71585 ;
+}
+.matter{
+    color: black;
+    font-size: 1.05em;
+    overflow: hidden;
+    text-align: justify;
+    padding-top: 10px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+</style>
+<body >
+  <!--   <nav class="header">
+        <span id="logo"><a href="Home_main.html"><img  src="logo.png" height="90px" width="100px" ></a></span>
+        <a class="active" href="Account.jsp" class="nav">Account</a>
+        <a href="faq.html" class="nav">FAQ's</a>
+        <a href="demo.html" class="nav">Demo</a>
+        <a href="Home_main.html" class="nav">Home</a>
+    </nav> -->
+    
+<div id="navbar">
+  <span id="logo"><img  src="logo.png" height="120px" width="120px" ></span>
+  <div id="navbar-right">
+    <a class="active" href="Home_main.html">Home</a>
+    <a href="demo.html">Demo</a>
+    <a href="faq.html">FAQ's</a>
+    <a href="Account.jsp">Account</a>
+  </div>
+</div>
+    
+<!-- Slide Show -->
+<div class="section">
+  <span class="image1">
+<section>
+    <img class="mySlides" src="fp3.jpg">
+    <img class="mySlides" src="homepage2.jpg">
+    <img class="mySlides" src="homepage.jpg">
+  </section>
+</span>
+</div>
+</br>
+<center>
+<div class="matter">
+    
+    <p>The password plays an important role in cybersecurity. Many times for a purpose we often share our passwords with others. To protect our password 
+    from the unauthorized access we propose an idea of <b>"Floating password"</b> which is a Dynamic Password Concept. The idea is to provide security to password in database 
+    and also at the time of login. 
+    Here, for every successful login, the password changes according to specified algorithm choosen by the user, i.e, the every character of the password is changed to another character,
+     according to the algorithm specified by the user with different operations generating a new password, <i>Floating Password</i> which is known to the user through an interface, 
+     app to access the account. The interface, App is fully secured through continous face 
+     regognition to view the altered password. Instead of provideing security to each and every app, we are securing the only one as it is of highly confidential, reducing thus the complexities. 
+     After a successful login, the password is altered and stored in the database through BDNA algorithm. </p>
+     </br>
+     <p>The BDNA algorithm is a customised Cryptographic algorithm that generates cipher text in less time and with less size gives an excellent Throughput when compared with 
+     the traditional symmetric key algorithms like AES, DES, Blowfish, DNA Cryptography, RSA Cryptography.
+     Thus, this idea reduces the risk of misuse of datahandlers, increase the privacy of the password. 
+     This idea decreases the probability of hacking when compared to OTP. And reducing the need of 2FA, itself act as 2FA.</p>
+     </br>
+     <p>Even if intruder knows our password he cannot login to my account for the next time as the password is changed for every successful login. 
+     Hence overcomes the drawbacks of Static passwords.</p>
+
+</div>
+
+</center>
+<div style="padding-top:100px;"></div>
+<div id="footer"> <center><p><b><b>&middot;</b></b> SMV <b><b>&middot;</b></b> copyright &copy; <b><b>&middot;</b></b></p></center></div> 
+    </body>
+    </html>
+        <script>
+            // Automatic Slideshow - change image every 3 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+            </script>
+            

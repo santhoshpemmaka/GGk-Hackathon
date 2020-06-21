@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<style>
+*,body{
+	font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left; 
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.mfaq{
+	padding-top:130px;
+    justify-content: space-around;
+    text-align: center; 
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  float:left;
+  padding:16px 30px 16px 750px;
+  text-align: center; 
+  display: none;
+  background-color: white;
+}
+
+</style>
+<head>
+<title>SMV FAQ</title>
+</head>
+<link rel="stylesheet" type="text/css" href="svm_style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<!--     <nav class="header">
+        <span id="logo"><a href="Home_main.html" ><img src="logo.png" height="90px" width="100px" ></a></span>
+        <a href="Account.jsp" class="nav">Account</a>
+        <a href="faq.html" class="nav">FAQ's</a>
+        <a href="demo.html" class="nav">Demo</a>
+        <a href="Home_main.html" class="nav">Home</a>
+    </nav>
+     -->
+    
+    
+    
+<div id="navbar">
+  <span id="logo"><img  src="logo.png" height="120px" width="120px" ></span>
+  <div id="navbar-right">
+    <a href="Home_main.html">Home</a>
+    <a href="demo.html">Demo</a>
+    <a class="active" href="faq.html">FAQ's</a>
+    <a href="Account.jsp">Account</a>
+  </div>
+</div>
+    
+    
+<div class="mfaq">
+<div class="faq2"> <img src="question.png" height="80%" width="120%"> </div>
+<div class="faq1">
+<button class="accordion">1. How to register to an account?</button>
+<p class="panel">On website click on login that gets us to login page.</p>
+
+<button class="accordion">2. How is security provided to our account?</button>
+<p class="panel">The password we registered is stored in encrypted form in database. The password is altered for every login. </p>
+
+<button class="accordion">3. What is floating password?</button>
+  <p class="panel">The password changing for every successful login according to algorithm is termed as FLOATING PASSWORD.</p>
+
+<button class="accordion">4.What is B-DNA algorithm ?</button>
+  <p class="panel">The algorithm is customized Encryption technique with 14-bit key that provides ciper text in small size in less time. It is used for storing password in database.</p>
+
+<button class="accordion">5. What is the need to store our password in Encrypted form ?</button>
+<p class="panel">Encryption is necessary to avoid misuse of database and interface by intruders.</p>
+
+<button class="accordion">6. How is it different from OTP ?</button>
+<p class="panel">The probability of hacking in OTP is more due to fixed no. of digits, while password will be in user specified length.</p>
+
+<button class="accordion">7. How do we get New password after every login ?</button>
+<p class="panel">We get NewPassword based on the algorithm that is chosen by the user at the time of registration.</p>
+
+<button class="accordion">8. Can we password to any other interface other than email ?</button>
+<p class="panel">Yes, we can send password to our designed app and provide security with facial recognition.</p>
+
+<button class="accordion">9. What if, the login does not enter after entering password ?</button>
+<p class="panel">The password does not alters to New Password because it only changes for successful login.</p>
+
+<button class="accordion">10. What is the need to change password ?</button>
+<p class="panel">If someone knows our password, he may use it for login without our conset. So, there is need to change password for every login.</p>
+
+<button class="accordion">11. From where do we get new password ?</button>
+<p class="panel">The altered password is obtained from Database to user app through which we can enter New Password and login. </p>
+
+</div>
+
+
+
+</div></body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block"; 
+    }
+  });
+}
+</script>
+
+  </html>
